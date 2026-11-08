@@ -1,0 +1,273 @@
+Network Intrusion Detection Using Graphs In C++
+
+SAMPLE PROGRAM OUTPUT
+
+INPUT
+
+Enter number of computers: 5
+Enter number of connections: 4
+
+Enter each connection as two computer IDs.
+First computer: 0
+Second computer: 1
+First computer: 0
+Second computer: 2
+First computer: 0
+Second computer: 3
+First computer: 0
+Second computer: 4
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 1
+
+========== NETWORK GRAPH ==========
+
+Computer 0 -> 1 2 3 4
+Computer 1 -> 0
+Computer 2 -> 0
+Computer 3 -> 0
+Computer 4 -> 0
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 2
+
+========== NETWORK INTRUSION DETECTION SYSTEM ==========
+
+Total Computers   : 5
+Total Connections : 4
+Detection Rule    : Flag if connections > 3
+
+========== COMPUTER RISK REPORT ==========
+
+Computer 0
+Connections : 4
+Risk Score  : 70/100
+Risk Level  : HIGH
+Reason      : Connection count exceeds threshold
+
+Computer 1
+Connections : 1
+Risk Score  : 0/100
+Risk Level  : LOW
+Reason      : No suspicious activity detected by this rule
+
+Computer 2
+Connections : 1
+Risk Score  : 0/100
+Risk Level  : LOW
+Reason      : No suspicious activity detected by this rule
+
+Computer 3
+Connections : 1
+Risk Score  : 0/100
+Risk Level  : LOW
+Reason      : No suspicious activity detected by this rule
+
+Computer 4
+Connections : 1
+Risk Score  : 0/100
+Risk Level  : LOW
+Reason      : No suspicious activity detected by this rule
+
+========== FINAL SUMMARY ==========
+
+Computers Analyzed     : 5
+Potentially Suspicious : 1
+Low-Risk by This Rule  : 4
+
+Recommendation:
+Investigate flagged computers' connection activity.
+
+Note: These rules do not prove an actual attack.
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 3
+
+First computer: 1
+Second computer: 2
+Connection added.
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 1
+
+========== NETWORK GRAPH ==========
+
+Computer 0 -> 1 2 3 4
+Computer 1 -> 0 2
+Computer 2 -> 0 1
+Computer 3 -> 0
+Computer 4 -> 0
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 4
+
+First computer: 1
+Second computer: 2
+Connection removed.
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 1
+
+========== NETWORK GRAPH ==========
+
+Computer 0 -> 1 2 3 4
+Computer 1 -> 0
+Computer 2 -> 0
+Computer 3 -> 0
+Computer 4 -> 0
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 5
+
+Starting computer: 0
+BFS Traversal: 0 1 2 3 4
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 6
+
+Starting computer: 0
+DFS Traversal: 0 1 2 3 4
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 7
+
+========== NETWORK STATISTICS ==========
+
+Computers       : 5
+Connections     : 4
+Isolated Nodes  : 0
+Flagged Nodes   : 1
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 8
+
+Enter new threshold: 4
+Threshold updated.
+
+===== MAIN MENU =====
+
+1. Display Network
+2. Run Intrusion Analysis
+3. Add Connection
+4. Remove Connection
+5. BFS Traversal
+6. DFS Traversal
+7. Network Statistics
+8. Change Threshold
+0. Exit
+
+Enter choice: 0
+
+Thank you for using Network IDS!
+
+END OF SAMPLE OUTPUT
